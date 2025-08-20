@@ -1,0 +1,7 @@
+<h2>Smoke Detector</h2>
+<p>Status: 
+  <strong [style.color]="smokeDetected ? 'red' : 'green'">
+    {{ smokeDetected ? 'Smoke Detected! 🚨' : 'Normal' }}
+  </strong>
+</p>
+<button (click)="checkSmoke()">Check</button>
